@@ -1,62 +1,45 @@
 //import React from 'react';
+import Table from 'react-bootstrap/Table';
 
 function Menu() {
   return (
     <div className="">    
-    <table>
-        <tbody>
-      <tr>
-        <td>&nbsp;</td>
-        <th>Mon</th>
-        <th>Tues</th>
-        <th>Wed</th>
-        <th>Thurs</th>
-        <th>Fri</th>
-        <th>Sat</th>
-        <th>Sun</th>
-      </tr>
-      <tr>
-        <th>Breakfast</th>
-        <td>English</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>German</td>
-        <td>Dutch</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th>Snack</th>
-        <td>English</td>
-        <td>English</td>
-        <td>&nbsp;</td>
-        <td>German</td>
-        <td>Dutch</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th>Lunch</th>
-        <td></td>
-        <td>German</td>
-        <td>&nbsp;</td>
-        <td>German</td>
-        <td>Dutch</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th>Dinner</th>
-        <td>&nbsp;</td>
-        <td>English</td>
-        <td>&nbsp;</td>
-        <td>English</td>
-        <td>Dutch</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
+    
+
+
+    <Table striped bordered hover variant="dark">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td colSpan={2}>Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
       </tbody>
-    </table>
+    </Table>
+  
+
+
+
     </div>
   );
 }
